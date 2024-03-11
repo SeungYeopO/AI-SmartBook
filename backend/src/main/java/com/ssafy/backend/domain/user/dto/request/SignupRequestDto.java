@@ -1,18 +1,3 @@
-package com.ssafy.backend.domain.user.dto.request;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.ssafy.backend.domain.user.entity.User;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.ToString;
-
-@Builder
-public record SignupRequestDto (
-    String email,
-    String password,
-    String name,
-
-    User.Role role)
-{
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b81810f09220fa6e859acf142b5a3d6c21df280150a925d1b2bbf2e0c93c883d
+size 202
