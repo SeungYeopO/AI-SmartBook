@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11a812f7497c97ad49026ba2be4c64285cce701f0de89e750058f221d0ab8b4b
-size 280
+package com.ssafy.backend.domain.book.mapper;
+
+import com.ssafy.backend.domain.book.dto.BookDto;
+import com.ssafy.backend.domain.book.entity.Book;
+import org.mapstruct.Mapper;
+
+@Mapper(componentModel = "spring")
+public interface BookMapper {
+
+    BookDto toBookDto(Book book);
+
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fdc6d4afff71c09e2e63bbd32edf19ff43c61f7ffbf34e85090331125abf4ba6
-size 380
+package com.ssafy.backend.domain.user.dto.request;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.ssafy.backend.domain.user.entity.User;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+public class UpdateRequestDto {
+
+    private String name;
+    private String nickname;
+
+    @JsonProperty("profile_image")
+    private String profileImage;
+
+}

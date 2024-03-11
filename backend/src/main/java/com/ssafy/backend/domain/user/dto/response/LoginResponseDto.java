@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efb9d41876e7fb962dcc0bcc056ac6294097c55c89dc8c8e7dcafa31fbf3a14d
-size 375
+package com.ssafy.backend.domain.user.dto.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.ssafy.backend.global.jwt.dto.TokenDto;
+import lombok.*;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class LoginResponseDto {
+
+    @JsonProperty("user_info")
+    private UserResponseDto userInfo;
+
+    private TokenDto token;
+
+}
