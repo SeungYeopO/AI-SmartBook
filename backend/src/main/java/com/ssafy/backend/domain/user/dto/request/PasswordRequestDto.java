@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e184e729620df4c1ac620585b025b1b1dfb53a618d28f1a58639763bf36b4a8
-size 363
+package com.ssafy.backend.domain.user.dto.request;
+
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
+
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
+public record PasswordRequestDto (
+
+    String currentPassword,
+
+    String newPassword,
+
+    String newPasswordCheck
+)
+{}
