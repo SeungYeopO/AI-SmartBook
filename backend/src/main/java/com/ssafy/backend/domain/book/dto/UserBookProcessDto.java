@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd10f87c8caf1a7146aef8f695952915a34530508dda342fc8352306613bb47b
-size 238
+package com.ssafy.backend.domain.book.dto;
+
+import com.ssafy.backend.domain.book.entity.Book;
+import com.ssafy.backend.domain.user.entity.User;
+import lombok.Builder;
+
+@Builder
+public record UserBookProcessDto(
+        BookDto book
+) {
+}
