@@ -1,11 +1,3 @@
-package com.ssafy.backend.domain.book.repository.review;
-
-import com.ssafy.backend.domain.book.dto.response.BookReviewResponseDto;
-import com.ssafy.backend.domain.book.entity.BookReview;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface BookReviewRepository extends JpaRepository<BookReview, Long> {
-    List<BookReviewResponseDto> findByBook_bookId(Long bookId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:36bd5c7938b98d2657fe2f1550e50bd5e5382aec8ee2931b4d2bae070e646432
+size 447
