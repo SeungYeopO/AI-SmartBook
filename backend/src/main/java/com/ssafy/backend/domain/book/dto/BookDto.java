@@ -1,16 +1,3 @@
-package com.ssafy.backend.domain.book.dto;
-import lombok.Builder;
-import lombok.Setter;
-
-@Builder
-public record BookDto(
-        Long bookId,
-        String title,
-        String summary,
-        String coverPath,
-        String price,
-        boolean isPay
-)
-{
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0b1107a82e97b25e7bfdf43454c09ca7fc29e4a8dc355678016c41781a30fc7
+size 265
