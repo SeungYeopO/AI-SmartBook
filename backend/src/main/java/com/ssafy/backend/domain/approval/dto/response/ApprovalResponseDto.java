@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:217ca46894e2d7fff4df875a515877a793d911d9784d8692af16a897d41745bf
-size 438
+package com.ssafy.backend.domain.approval.dto.response;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.time.LocalDateTime;
+
+public record ApprovalResponseDto(
+        Long approvalId,
+        int price,
+        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", timezone = "Asia/Seoul")
+        LocalDateTime approvalDate,
+        Long bookId,
+        String bookTitle,
+        String coverPath
+) {
+}
