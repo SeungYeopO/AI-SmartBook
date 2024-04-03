@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad25985563db47f87f1df2129773a269506e1c7b6c92835ee9f206d57a843d6b
-size 474
+package com.ssafy.backend.global.util;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class EmailValidator {
+
+	private static final String EMAIL_REGEX =
+			"^[a-zA-Z0-9_+&*-]+(?:\\." +
+					"[a-zA-Z0-9_+&*-]+)*@" +
+					"(?:[a-zA-Z0-9-]+\\.)+[a-z" +
+					"A-Z]{2,7}$";
+
+	public static boolean isValidEmail(String email) {
+		Pattern pattern = Pattern.compile(EMAIL_REGEX);
+		Matcher matcher = pattern.matcher(email);
+		return matcher.matches();
+	}
+}
