@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0a6e789625023b4bf8942b4a0a53b8756801b3e8c548e08400d393992314fc8
-size 102
+[시연 시나리오](https://unruly-speedboat-bc2.notion.site/ead838c8883a41efbb22a121399a9761?pvs=4)
